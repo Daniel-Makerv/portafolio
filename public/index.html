@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="shortcut icon" href="/public/img/icono.ico" type="image/x-icon">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<title>Daniel Rivera</title>
+</head>
+
+<body class="bg-gray-200" id="body">
+  <!-- navbar goes here -->
+  <nav class="fixed inset-0 h-16 from-white via-white to-white backdrop-filter backdrop-blur-sm md:backdrop-blur-lg"
+    id="navcolor">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+
+        <div class="flex space-x-4 ">
+          <!-- logo -->
+          <div>
+            <a href="#" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+              <svg class="h-6 w-6 mr-1 text-blue-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+              </svg>
+              <span class="font-black text-white">Daniel Makerv</span>
+            </a>
+          </div>
+
+          <!-- primary nav -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="#sobreMi" class="py-5 px-3 text-white hover:underline">Sobre mi</a>
+            <a href="#tecnologias" class="py-5 px-3 text-white hover:underline">Tecnologías</a>
+            <a href="#portafolio" class="py-5 px-3 text-white hover:underline">Portafolio</a>
+            <a href="#contacto" class="py-5 px-3 text-white hover:underline">Contacto</a>
+
+          </div>
+        </div>
+
+        <!-- secondary nav -->
+        <div class="hidden md:flex items-center space-x-1">
+          <button class="py-2 px-3 bg-indigo-700 rounded transition duration-300" id="modoNocturno"><svg
+              xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+            </svg></button>
+        </div>
+
+        <!-- mobile button goes here -->
+        <div class="md:hidden flex items-center">
+          <button class="mobile-menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="22"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <line x1="4" y1="6" x2="20" y2="6" />
+              <line x1="4" y1="12" x2="20" y2="12" />
+              <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu hidden md:hidden text-center text-white backdrop-filter backdrop-blur-sm">
+      <a href="#sobreMi" class="block py-2 px-4 text-sm hover:underline">Sobre mi</a>
+      <a href="#tecnologias" class="block py-2 px-4 text-sm hover:underline ">Tecnologías</a>
+      <a href="#portafolio" class="block py-a2 px-4 text-sm hover:underline ">Portafolio</a>
+      <a href="#contacto" class="block py-2 px-4 text-sm hover:underline">Contacto</a><br>
+      <button class="py-2 px-3 bg-indigo-700 rounded transition duration-300" id="modoNocturno"><svg
+          xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+        </svg></button><br><br>
+
+    </div>
+  </nav>
+  <!-- section inicio-->
+  <section class="snap-start bg-no-repeat lg:h-screen bg-center bg-cover lg:bg-fixed center"
+    style="background-image: url(img/background2.png);">
+    <div class="container mx-auto flex px-5 py-24 sm:py-40 items-center justify-center flex-col">
+      <img class="lg:w-64 md:w-3/6 w-1/2 mb-2 object-cover object-center rounded-full" alt="hero"
+        src="./img/yo.png">
+
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="title-font mt-4 text-white font-bold text-2xl lg:text-5xl  sm:text-3xl" id="name">José Daniel De La
+          Cruz Rivera.<span>&#160;</span></h1>
+        <div class="flex justify-center mt-2">
+          <div class="lg:w-24 w-14 h-1 bg-gradient-to-r from-white"></div>
+        </div>
+        <p class="text-white font-bold text-1xl lg:text-2xl sm:text-1xl mt-3" id="description">Desarrollador Back-End y
+          Front-End.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- section sobre mi -->
+  <section class="snap-start bg-gradient-to-r bg-white body-font" id="sobreMi">
+    <div class="container px-5 py-24 mx-auto flex flex-col">
+      <div class="lg:w-4/6 mx-auto">
+        <h1 class="sm:text-4xl text-2xl title-font mb-4 sm:text-center text-center  font-bold text-black">Sobre mi</h1>
+        <div class="flex justify-center mt-2">
+          <div class="w-12 h-1 bg-blue-500 rounded mb-4"></div>
+        </div>
+        <div class="flex flex-col sm:flex-row mt-6">
+          <div class="bg-white dark:bg-gray-800 w-72 shadow-lg mx-auto rounded-xl p-4">
+            <p class="text-gray-600 dark:text-white">
+              <span class="font-bold text-blue-500 text-lg">
+                “
+              </span>
+              No soy el mejor pero trabajo para serlo.
+              <span class="font-bold text-blue-500 text-lg">
+                ”
+              </span>
+            </p>
+            <div class="flex items-center mt-4">
+              <a href="#" class="block">
+                <img alt="profil" src="img/yo.png" class="mx-auto object-cover rounded-full h-10 w-10 " />
+              </a>
+              <div class="flex flex-col ml-2 justify-between">
+                <span class="font-semibold text-blue-500 text-sm">
+                  Daniel Rivera
+                </span>
+                <span class="dark:text-gray-400 text-xs flex items-center">
+                  Estudiante
+                  <img src="img/paper-plane.png" class="ml-2 h-4 w-4" />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+            <p class="leading-relaxed text-lg mb-4 text-black">¡Hola, soy un estudiante que se encuentra cursando la
+              carrera de desarrollo de software multiplataforma y
+              esta es mi web personal con algunos trabajos que he realizado!.</p>
+
+            <a class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:bg-indigo-500 ml-0 md:ml-5 bg-blue-500 dark:bg-indigo-600 
+                        ease-in-out hover:bg-indigo-600 rounded text-white px-3 md:px-6 py-2 text-sm hover:shadow-lg transition duration-500 transform-gpu hover:scale-110"
+              Target="_blank" href="./PDF/CV-Jose-Daniel-De-La-Cruz-Rivera.pdf">Descargar
+              CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section tecnologias-->
+  <section class="snap-start bg-gradient-to-br grid place-items-center" id="tecnologias">
+    <div class="">
+      <div class="bg-white  sm:p-32 shadow-sm">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="sm:text-3xl text-2xl title-font mb-4 text-black font-bold mt-4">Tecnologías</h1>
+          <div class="flex justify-center mt-2">
+            <div class="w-12 h-1 bg-blue-500 rounded mb-4"></div>
+          </div>
+        </div>
+
+        <div class="h-1 w-full mx-auto border-b my-5"></div>
+
+        <!-- What is term -->
+        <div class="transition hover:bg-white">
+          <!-- header -->
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+            <i class="fas fa-plus"></i>
+            <h3>Lenguajes de programación y estilos</h3>
+          </div>
+          <!-- Content -->
+          <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0 items-center">
+            <div class="container px-5 py-24 mx-auto text-white">
+              <div class="flex flex-wrap -m-4 text-center">
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <img class="text-indigo-500 w-12 h-12 mb-3 inline-block" src="./img/javascript.png" alt=""
+                      srcset="">
+                    <h2 class="title-font font-medium text-2xl text-gray-900">Javascript</h2>
+                    <p class="leading-relaxed text-blue-500">Lenguaje</p>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <img class="text-indigo-500 w-16 h-16 inline-block" src="./img/php.png" alt="" srcset="">
+                    <h2 class="title-font font-medium text-2xl text-gray-900">php</h2>
+                    <p class="leading-relaxed text-blue-500">Lenguaje</p>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <img class="text-indigo-500 w-16 h-16 inline-block" src="./img/java.png" alt="" srcset="">
+                    <h2 class="title-font font-medium text-2xl text-gray-900">Java</h2>
+                    <p class="leading-relaxed text-blue-500">Lenguaje</p>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <img class="text-indigo-500 w-16 h-16 inline-block" src="./img/css.png" alt="" srcset="">
+                    <h2 class="title-font font-medium text-2xl text-gray-900">Css</h2>
+                    <p class="leading-relaxed text-blue-500">Hoja de estilos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- When to use Accordion Components -->
+        <div class="transition hover:bg-white">
+          <!-- header -->
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+            <i class="fas fa-plus"></i>
+            <h3>Frameworks y tecnologías</h3>
+          </div>
+          <!-- Content -->
+          <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0 items-center">
+            <div class="container px-5 py-24 mx-auto text-white">
+              <div class="flex flex-wrap -m-4 text-center">
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <img class="text-indigo-500 w-12 h-12 mb-3 inline-block" src="./img/laravel.png" alt="" srcset="">
+                    <h2 class="title-font font-medium text-2xl text-gray-900">Laravel</h2>
+                    <p class="leading-relaxed text-blue-500">Framework-php</p>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <img class="text-indigo-500 w-40 h-20 inline-block" src="./img/nextjs.png" alt="" srcset="">
+                    <h2 class="title-font font-medium text-2xl text-gray-900">Next JS</h2>
+                    <p class="leading-relaxed text-blue-500">Framework-React</p>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <img class="text-indigo-500 w-16 h-16 inline-block" src="./img/react.png" alt="" srcset="">
+                    <h2 class="title-font font-medium text-2xl text-gray-900">React</h2>
+                    <p class="leading-relaxed text-blue-500">Libreria-Javascript</p>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <img class="text-indigo-500 w-16 h-16 inline-block" src="./img/nodejs.png" alt="" srcset="">
+                    <h2 class="title-font font-medium text-2xl text-gray-900">Node JS</h2>
+                    <p class="leading-relaxed text-blue-500">Entorno-Javascript</p>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <img class="text-indigo-500 w-16 h-16 inline-block" src="./img/bootstrap.png" alt="" srcset="">
+                    <h2 class="title-font font-medium text-2xl text-gray-900">Bootstrap</h2>
+                    <p class="leading-relaxed text-blue-500">Framework-Css</p>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <svg viewBox="0 0 248 31" class="w-auto h-5">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z"
+                        fill="#38bdf8"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M76.546 12.825h-4.453v8.567c0 2.285 1.508 2.249 4.453 2.106v3.463c-5.962.714-8.332-.928-8.332-5.569v-8.567H64.91V9.112h3.304V4.318l3.879-1.143v5.937h4.453v3.713zM93.52 9.112h3.878v17.849h-3.878v-2.57c-1.365 1.891-3.484 3.034-6.285 3.034-4.884 0-8.942-4.105-8.942-9.389 0-5.318 4.058-9.388 8.942-9.388 2.801 0 4.92 1.142 6.285 2.999V9.112zm-5.674 14.636c3.232 0 5.674-2.392 5.674-5.712s-2.442-5.711-5.674-5.711-5.674 2.392-5.674 5.711c0 3.32 2.442 5.712 5.674 5.712zm16.016-17.313c-1.364 0-2.477-1.142-2.477-2.463a2.475 2.475 0 012.477-2.463 2.475 2.475 0 012.478 2.463c0 1.32-1.113 2.463-2.478 2.463zm-1.939 20.526V9.112h3.879v17.849h-3.879zm8.368 0V.9h3.878v26.06h-3.878zm29.053-17.849h4.094l-5.638 17.849h-3.807l-3.735-12.03-3.771 12.03h-3.806l-5.639-17.849h4.094l3.484 12.315 3.771-12.315h3.699l3.734 12.315 3.52-12.315zm8.906-2.677c-1.365 0-2.478-1.142-2.478-2.463a2.475 2.475 0 012.478-2.463 2.475 2.475 0 012.478 2.463c0 1.32-1.113 2.463-2.478 2.463zm-1.939 20.526V9.112h3.878v17.849h-3.878zm17.812-18.313c4.022 0 6.895 2.713 6.895 7.354V26.96h-3.878V16.394c0-2.713-1.58-4.14-4.022-4.14-2.55 0-4.561 1.499-4.561 5.14v9.567h-3.879V9.112h3.879v2.285c1.185-1.856 3.124-2.749 5.566-2.749zm25.282-6.675h3.879V26.96h-3.879v-2.57c-1.364 1.892-3.483 3.034-6.284 3.034-4.884 0-8.942-4.105-8.942-9.389 0-5.318 4.058-9.388 8.942-9.388 2.801 0 4.92 1.142 6.284 2.999V1.973zm-5.674 21.775c3.232 0 5.674-2.392 5.674-5.712s-2.442-5.711-5.674-5.711-5.674 2.392-5.674 5.711c0 3.32 2.442 5.712 5.674 5.712zm22.553 3.677c-5.423 0-9.481-4.105-9.481-9.389 0-5.318 4.058-9.388 9.481-9.388 3.519 0 6.572 1.82 8.008 4.605l-3.34 1.928c-.79-1.678-2.549-2.749-4.704-2.749-3.16 0-5.566 2.392-5.566 5.604 0 3.213 2.406 5.605 5.566 5.605 2.155 0 3.914-1.107 4.776-2.749l3.34 1.892c-1.508 2.82-4.561 4.64-8.08 4.64zm14.472-13.387c0 3.249 9.661 1.285 9.661 7.89 0 3.57-3.125 5.497-7.003 5.497-3.591 0-6.177-1.607-7.326-4.177l3.34-1.927c.574 1.606 2.011 2.57 3.986 2.57 1.724 0 3.052-.571 3.052-2 0-3.176-9.66-1.391-9.66-7.781 0-3.356 2.909-5.462 6.572-5.462 2.945 0 5.387 1.357 6.644 3.713l-3.268 1.82c-.647-1.392-1.904-2.035-3.376-2.035-1.401 0-2.622.607-2.622 1.892zm16.556 0c0 3.249 9.66 1.285 9.66 7.89 0 3.57-3.124 5.497-7.003 5.497-3.591 0-6.176-1.607-7.326-4.177l3.34-1.927c.575 1.606 2.011 2.57 3.986 2.57 1.724 0 3.053-.571 3.053-2 0-3.176-9.66-1.391-9.66-7.781 0-3.356 2.908-5.462 6.572-5.462 2.944 0 5.386 1.357 6.643 3.713l-3.268 1.82c-.646-1.392-1.903-2.035-3.375-2.035-1.401 0-2.622.607-2.622 1.892z"
+                        fill="#0f172a"></path>
+                    </svg>
+                    <h2 class="title-font font-medium text-2xl text-gray-900"></h2>
+                    <p class="leading-relaxed text-blue-500 mt-4">Framework-Css</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Wrapper -->
+        <div class="transition hover:bg-white">
+          <!-- header -->
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+            <i class="fas fa-plus"></i>
+            <h3>Bases de datos</h3>
+          </div>
+          <!-- Content -->
+          <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0 items-center">
+            <div class="container px-5 py-24 mx-auto text-white">
+              <div class="flex flex-wrap -m-4 text-center">
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <img class="text-indigo-500 w-12 h-12 mb-3 inline-block" src="./img/mysql.png" alt="" srcset="">
+                    <h2 class="title-font font-medium text-2xl text-gray-900">Mysql</h2>
+                    <p class="leading-relaxed text-blue-500">Base de datos relacional</p>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <img class="text-indigo-500 w-12 h-12 mb-3 inline-block" src="./img/mongodb.png" alt="" srcset="">
+                    <h2 class="title-font font-medium text-2xl text-gray-900">Mongodb</h2>
+                    <p class="leading-relaxed text-blue-500">Base de datos no relacional</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Wrapper -->
+        <div class="transition hover:bg-white">
+          <!-- header -->
+          <div class="accordion-header cursor-pointer transition flex space-x-5 px-5 items-center h-16">
+            <i class="fas fa-plus"></i>
+            <h3>Servidores</h3>
+          </div>
+          <!-- Content -->
+          <div class="accordion-content px-5 pt-0 overflow-hidden max-h-0 items-center">
+            <div class="container px-5 py-24 mx-auto text-white">
+              <div class="flex flex-wrap -m-4 text-center">
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <img class="text-indigo-500 w-12 h-12 mb-3 inline-block" src="./img/aws.png" alt="" srcset="">
+                    <h2 class="title-font font-medium text-2xl text-gray-900">AWS</h2>
+                    <p class="leading-relaxed text-blue-500">Amazon web service</p>
+                  </div>
+                </div>
+                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                  <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <img class="text-indigo-500 w-12 h-12 mb-3 inline-block" src="./img/heroku.png" alt="" srcset="">
+                    <h2 class="title-font font-medium text-2xl text-gray-900">Heroku</h2>
+                    <p class="leading-relaxed text-blue-500">Cloud computing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- section portafolio -->
+  <section class="bg-gradient-to-r bg-white body-font" id="portafolio">
+    <div class="container px-5 py-24 mx-auto flex flex-col">
+      <div class="lg:w-4/6 mx-auto">
+        <h1 class="sm:text-4xl text-2xl title-font mb-4 sm:text-center text-center  font-bold text-black">Portafolio
+        </h1>
+        <div class="flex justify-center mt-2">
+          <div class="w-12 h-1 bg-blue-500 rounded mb-4"></div>
+        </div>
+        <!-- contenido -->
+        <div class="flex flex-wrap">
+
+          <div class="md:w-1/2 lg:w-1/3 py-4 px-4 one">
+            <div class="">
+              <div class="">
+                <div class="bg-white container shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                  <img src="./img/background.png" autoplay loop muted
+                    class="cover h-32 rounded-lg w-full object-cover"></img>
+                  <div class="flex justify-center">
+                    <img src="./img/dbz-icon.png"
+                      class="rounded-full -mt-6 border-4 object-center object-cover border-transparent mr-2 h-16 w-16">
+                  </div>
+                  <div class="py-2 px-2">
+                    <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-blue-500"></span>
+                    <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-blue-500"></span>
+                    <div class=" font-bold font-title text-center">Dragon ball Z</div>
+                    <div class="text-sm font-light text-center my-2">Videojuego de dragon ball Z</div>
+                    <div class="text-sm font-light text-center my-2 leading-relaxed text-blue-500">Proyecto Personal
+                    </div>
+                    <div
+                      class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l  border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                      <a class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:bg-indigo-500 ml-0 md:ml-5 bg-blue-500 dark:bg-indigo-600 
+                      ease-in-out hover:bg-indigo-600 rounded text-white px-3 md:px-6 py-2 text-sm hover:shadow-lg transition duration-500 transform-gpu hover:scale-110"
+                        Target="_blank" href="https://cusaem.mydentista-admin.com/">¡Mirar!</a>
+
+                      <div id="desDBZ" class="desDBZ bg-white border-l-4  border-blue-500 mt-4 p-3">
+                        <h6 class="mb-2 font-semibold leading-5">
+                          Descripción
+                        </h6>
+                        <p class="text-sm text-gray-900">
+                          <strong>Creación: </strong>2021.
+                        </p>
+                        <p class="text-sm text-gray-900">
+                          <strong>Descripción: </strong>Videojuego de un jugador, modo pelea basado en la serie dragón
+                          ball z.
+                        </p>
+                        <p class="text-sm text-gray-900">
+                          <strong>Tecnologías: </strong>Javascript, css, jquery.
+                        </p>
+                        <p class="text-sm text-gray-900">
+                          <strong>Versión: 0.1.5.</strong>
+                        </p>
+                      </div>
+                      <button id="botonOcultar"
+                        class="mt-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:bg-indigo-500 ml-0 md:ml-5 bg-blue-500 dark:bg-indigo-600 
+                      ease-in-out hover:bg-indigo-600 rounded text-white px-3 md:px-6 py-2 text-sm hover:shadow-lg transition duration-500 transform-gpu hover:scale-110"
+                        onclick="cambiadisplay('desDBZ')">Descripción</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="md:w-1/2 lg:w-1/3 py-4 px-4 two">
+            <div class="">
+              <div class="">
+                <div class="bg-white container shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                  <img src="./img/cusaem.png" class="cover h-32 rounded-lg w-full object-cover"></img>
+                  <div class="flex justify-center">
+                    <img src="./img/cusaem-icon.png"
+                      class="rounded-full -mt-6 border-4 object-center object-cover border-transparent mr-2 h-16 w-16">
+                  </div>
+                  <div class="py-2 px-2">
+                    <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-blue-500"></span>
+                    <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-blue-500"></span>
+                    <div class=" font-bold font-title text-center">Cusaem cuerpos policiales</div>
+                    <div class="text-sm font-light text-center my-2">Pagina web</div>
+                    <div
+                      class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l  border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                      <a class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:bg-indigo-500 ml-0 md:ml-5 bg-blue-500 dark:bg-indigo-600 
+                        ease-in-out hover:bg-indigo-600 rounded text-white px-3 md:px-6 py-2 text-sm hover:shadow-lg transition duration-500 transform-gpu hover:scale-110"
+                        Target="_blank" href="https://cusaem.mydentista-admin.com/">¡Mirar!</a>
+
+                      <div id="descCusaem" class="descCusaem bg-white border-l-4  border-blue-500 mt-4 p-3">
+                        <h6 class="mb-2 font-semibold leading-5">
+                          Descripción
+                        </h6>
+                        <p class="text-sm text-gray-900">
+                          <strong>Creación: </strong>2021.
+                        </p>
+                        <p class="text-sm text-gray-900">
+                          <strong>Descripción: </strong>Sistema con página web para poder postularse a guardia de seguridad CUSAEM.
+                        </p>
+                        <p class="text-sm text-gray-900">
+                          <strong>Tecnologías: </strong>Laravel 8, Javascript, css, jquery.
+                        </p>
+                        <p class="text-sm text-gray-900">
+                          <strong>Versión: 3.2.5.</strong>
+                        </p>
+                      </div>
+                      <button id="botonOcultardos"
+                        class="mt-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:bg-indigo-500 ml-0 md:ml-5 bg-blue-500 dark:bg-indigo-600 
+                      ease-in-out hover:bg-indigo-600 rounded text-white px-3 md:px-6 py-2 text-sm hover:shadow-lg transition duration-500 transform-gpu hover:scale-110"
+                        onclick="cambiadisplaydos('descCusaem')">Descripción</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="md:w-1/2 lg:w-1/3 py-4 px-4 tree">
+            <div class="">
+              <div class="">
+                <div class="bg-white container mx-auto shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                  <img src="./img/mydentista.png" class="h-32 rounded-lg w-full object-cover">
+                  <div class="flex justify-center">
+                    <img src="./img/mydentista-icon.png"
+                      class="rounded-full -mt-6 border-4 object-center object-cover border-transparent mr-2 h-16 w-16">
+                  </div>
+                  <div class="py-2 px-2">
+                    <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-1 bg-blue-500"></span>
+                    <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-1 bg-blue-500"></span>
+                    <div class=" font-bold font-title text-center">My Dentista</div>
+                    <div class="text-sm font-light text-center my-2">Sistema odontológico</div>
+                    <div class="text-sm font-light text-center my-2 leading-relaxed text-blue-500">Proyecto no accesible
+                    </div>
+                    <div
+                      class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l  border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                      <a class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:bg-indigo-500 ml-0 md:ml-5 bg-blue-500 dark:bg-indigo-600 
+                        ease-in-out hover:bg-indigo-600 rounded text-white px-3 md:px-6 py-2 text-sm hover:shadow-lg transition duration-500 transform-gpu hover:scale-110"
+                        Target="_blank" href="https://cusaem.mydentista-admin.com/">¡Mirar!</a>
+
+                      <div id="desDentista" class="desDentista bg-white border-l-4  border-blue-500 mt-4 p-3">
+                        <h6 class="mb-2 font-semibold leading-5">
+                          Descripción
+                        </h6>
+                        <p class="text-sm text-gray-900">
+                          <strong>Creación: </strong>2021.
+                        </p>
+                        <p class="text-sm text-gray-900">
+                          <strong>Descripción: </strong>Sistema web para odontología, sirve para manejo de pacientes, crear citas y generar ticket.
+                          ball z.
+                        </p>
+                        <p class="text-sm text-gray-900">
+                          <strong>Tecnologías: </strong>PHP, AJAX, Jquery, css.
+                        </p>
+                        <p class="text-sm text-gray-900">
+                          <strong>Versión: 5.0.1</strong>
+                        </p>
+                      </div>
+                      <button id="botonOcultartres"
+                        class="mt-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 focus:bg-indigo-500 ml-0 md:ml-5 bg-blue-500 dark:bg-indigo-600 
+                      ease-in-out hover:bg-indigo-600 rounded text-white px-3 md:px-6 py-2 text-sm hover:shadow-lg transition duration-500 transform-gpu hover:scale-110"
+                        onclick="cambiadisplaytres('desDentista')">Descripción</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section contacto -->
+  <section class="snap-start bg-gradient-to-r bg-white body-font" id="contacto">
+    <div class="container px-5 py-24 mx-auto flex flex-col">
+      <div class="lg:w-4/6 mx-auto">
+        <h1 class="sm:text-4xl text-2xl title-font mb-4 sm:text-center text-center  font-bold text-black">Contacto
+        </h1>
+        <div class="flex justify-center mt-2">
+          <div class="w-12 h-1 bg-blue-500 rounded mb-4"></div>
+        </div>
+        <!-- contenido -->
+
+        <div class="flex flex-wrap -m-4 text-center">
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <a class=" p-2 font-semibold text-white inline-flex items-center space-x-2 rounded" Target="_blank"
+              href="https://www.instagram.com/ddaniel_rivera/">
+              <img src="https://img.icons8.com/cute-clipart/115/000000/instagram-new.png" />
+            </a>
+            <p class="leading-relaxed">Instagram</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <a class=" p-2 font-semibold text-white inline-flex items-center space-x-2 rounded" Target="_blank"
+              href="mailto:danieldlcr5@gmail.com">
+              <img src="https://img.icons8.com/cute-clipart/100/000000/comments.png"/>
+            </a>
+            <p class="leading-relaxed">Danieldlcr5@gmail.com</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <a class=" p-2 font-semibold text-white inline-flex items-center space-x-2 rounded" Target="_blank"
+              href="https://www.linkedin.com/in/daniell-rivera/">
+              <img src="https://img.icons8.com/cute-clipart/100/000000/linkedin.png" />
+            </a>
+            <p class="leading-relaxed">LinkedIn</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <a class="btn p-2 font-semibold text-white inline-flex items-center space-x-2 rounded" Target="_blank"
+              href="https://github.com/Daniel-Makerv">
+              <img src="https://img.icons8.com/cute-clipart/100/000000/github.png" />
+            </a>
+            <p class="leading-relaxed">GitHub</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- section footer -->
+
+  <footer class="relative bg-blueGray-200 pt-8 pb-6 bg-white">
+    <hr class="my-6 border-blueGray-300">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-blueGray-500 font-semibold py-1">
+          Copyright © <span id="get-current-year">2021 </span><a href="https://www.creative-tim.com/product/notus-js"
+            class="text-blueGray-500 hover:text-gray-800" target="_blank">Portafolio by
+            <a href="https://www.creative-tim.com?ref=njs-profile"
+              class="text-blueGray-500 hover:text-blueGray-800">Daniel Makerv</a>.
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="./js/function.js"></script>
+</html>

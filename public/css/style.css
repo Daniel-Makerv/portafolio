@@ -1,0 +1,68 @@
+/* importando tipo de fuente */
+@font-face {
+    font-family: "nerdfont";
+    src: url("../fonts/agave regular Nerd Font Complete Mono.ttf");
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: nerdfont;
+    scroll-behavior: smooth;
+    /* background: #c3c3c3; */
+}
+
+
+#navcolor{
+    font-family: nerdfont;
+    background-color:#0000004d;
+    backdrop-filter: blur(20px);
+}
+
+#name{
+    font-family: nerdfont;
+   
+    /* float: left;
+    position: relative; */
+}
+
+#description{
+    font-family: nerdfont;
+}
+
+.mobile-menu{
+    background-color: #00000049;
+}
+
+
+    .accordion-content {
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    }
+
+    .one:hover span {
+        width: 50%;
+      }
+    .two:hover span {
+        width: 50%;
+      }
+
+      .tree:hover span {
+        width: 50%;
+      }
+
+
+#desDBZ{
+    display: none;
+}
+
+#descCusaem{
+    display: none;
+}
+
+#desDentista{
+    display: none;
+}
