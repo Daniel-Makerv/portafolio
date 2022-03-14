@@ -2,6 +2,13 @@
 
 Portafolio web hecho con tailwind Css
 
+## Descargar librerias de npm:
+
+Use el comando:
+
+```bash
+npm install
+```
 ## Construir archivo css con los estilos de Tailwind:
 
 Use el comando:
