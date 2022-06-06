@@ -9,6 +9,7 @@
     padding: 0;
 }
 
+
 html, body{
     height: 100%;
     font-family: nerdfont;
@@ -64,5 +65,17 @@ html, body{
 }
 
 #desDentista{
+    display: none;
+}
+
+#desDentistaSys{
+    display: none;
+}
+
+#desCross{
+    display: none;
+}
+
+#desJMusic{
     display: none;
 }
