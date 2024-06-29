@@ -3,6 +3,8 @@ import { arrayPortafol } from "./portafolio_object.js";
 const btn = document.querySelector("button.mobile-menu-button");
 const menu = document.querySelector(".mobile-menu");
 
+document.getElementById('get-current-year').innerHTML = moment().format('YYYY'); + " ";
+
 //modo nocturno prueba
 const moonIcon = document.querySelector(".moon");
 const sunIcon = document.querySelector(".sun");
@@ -74,9 +76,8 @@ accordionHeader.forEach((header) => {
 
     // Condition handling
     if (accordionMaxHeight == "0px" || accordionMaxHeight.length == 0) {
-      accordionContent.style.maxHeight = `${
-        accordionContent.scrollHeight + 32
-      }px`;
+      accordionContent.style.maxHeight = `${accordionContent.scrollHeight + 32
+        }px`;
       header.querySelector(".fas").classList.remove("fa-plus");
       header.querySelector(".fas").classList.add("fa-minus");
       header.parentElement.classList.add("bg-indigo-50");
@@ -142,4 +143,5 @@ arrayPortafol.forEach((target) => {
   </div>
 </div>`;
   document.getElementById("targetPortafolio").innerHTML = mostTarget;
+
 });
